@@ -1,0 +1,25 @@
+{
+  "student_name": "Eric",
+  "robot_name": "Atlas",
+  "version": "Atlas 5.0 Final Stable Program v1",
+  "records": [
+    {
+      "time": "2026-07-10 18:56:36",
+      "language": "English",
+      "recognized_text": "hello Atlas",
+      "intent": "GREETING",
+      "reply": "Hello Eric. I am Atlas. My voice, camera, OLED, lights, and head movement are running together.",
+      "status": "recognized",
+      "snapshot_path": ""
+    },
+    {
+      "time": "2026-07-10 18:57:24",
+      "language": "中文",
+      "recognized_text": "你好",
+      "intent": "GREETING",
+      "reply": "Hello Eric. I am Atlas. My voice, camera, OLED, lights, and head movement are running together.",
+      "status": "recognized",
+      "snapshot_path": ""
+    }
+  ]
+}

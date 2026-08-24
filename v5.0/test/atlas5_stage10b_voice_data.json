@@ -1,0 +1,78 @@
+{
+  "student_name": "Eric",
+  "version": "Atlas 5.0 Stage 10B Google Voice + TTS",
+  "records": [
+    {
+      "time": "2026-07-10 10:11:31",
+      "language": "English",
+      "recognized_text": "hello Atlas I am Eric",
+      "intent": "PROJECT_QUESTION",
+      "reply": "Atlas is currently using the Atlas 4.0 voice input and output method inside the Atlas 5.0 behavior system.",
+      "status": "recognized"
+    },
+    {
+      "time": "2026-07-10 10:54:29",
+      "language": "English",
+      "recognized_text": "hello Atlas I am Eric",
+      "intent": "PROJECT_QUESTION",
+      "reply": "Atlas is currently using the Atlas 4.0 voice input and output method inside the Atlas 5.0 behavior system.",
+      "status": "recognized"
+    },
+    {
+      "time": "2026-07-10 10:55:10",
+      "language": "English",
+      "recognized_text": "what can you do",
+      "intent": "SELF_INTRO",
+      "reply": "I am Atlas 5.0, a desktop hardware robot prototype. I can listen to your voice, understand simple intent, speak a reply, and control my head and lights.",
+      "status": "recognized"
+    },
+    {
+      "time": "2026-07-10 10:55:49",
+      "language": "English",
+      "recognized_text": "I am tired",
+      "intent": "ENCOURAGEMENT_REQUEST",
+      "reply": "Keep going, Eric. You have already completed many difficult steps. Test one function at a time, and the robot will become more stable.",
+      "status": "recognized"
+    },
+    {
+      "time": "2026-07-10 10:57:33",
+      "language": "中文",
+      "recognized_text": "你好啊请问我是Eric",
+      "intent": "NORMAL_QUESTION",
+      "reply": "I heard your question. This is a simulated answer. In a later stage, I can connect to a real AI brain.",
+      "status": "recognized"
+    },
+    {
+      "time": "2026-07-10 17:37:38",
+      "language": "English",
+      "recognized_text": "hello Atlas I am Eric",
+      "intent": "PROJECT_QUESTION",
+      "reply": "Atlas is currently using the Atlas 4.0 voice input and output method inside the Atlas 5.0 behavior system.",
+      "status": "recognized"
+    },
+    {
+      "time": "2026-07-10 17:38:57",
+      "language": "English",
+      "recognized_text": "I am tired",
+      "intent": "ENCOURAGEMENT_REQUEST",
+      "reply": "Keep going, Eric. You have already completed many difficult steps. Test one function at a time, and the robot will become more stable.",
+      "status": "recognized"
+    },
+    {
+      "time": "2026-07-10 17:39:34",
+      "language": "中文",
+      "recognized_text": "您好你是谁",
+      "intent": "NORMAL_QUESTION",
+      "reply": "I heard your question. This is a simulated answer. In a later stage, I can connect to a real AI brain.",
+      "status": "recognized"
+    },
+    {
+      "time": "2026-07-10 17:40:04",
+      "language": "中文",
+      "recognized_text": "你好",
+      "intent": "GREETING",
+      "reply": "Hello Eric. I am Atlas. I can hear you and speak now.",
+      "status": "recognized"
+    }
+  ]
+}

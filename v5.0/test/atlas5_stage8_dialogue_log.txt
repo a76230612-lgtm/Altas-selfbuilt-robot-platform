@@ -1,0 +1,7 @@
+[2026-07-09 10:51:32] USER: what can you do | INTENT: SELF_INTRO | ATLAS: I am Atlas 5.0, a hardware robot prototype. I can show basic behavior states using LEDs and a pan-tilt head.
+[2026-07-09 10:51:53] USER: hello | INTENT: GREETING | ATLAS: Hello. I am Atlas. I am ready to interact.
+[2026-07-09 10:52:10] USER: who are you | INTENT: SELF_INTRO | ATLAS: I am Atlas 5.0, a hardware robot prototype. I can show basic behavior states using LEDs and a pan-tilt head.
+[2026-07-09 10:52:39] USER: Im tired | INTENT: ENCOURAGEMENT_REQUEST | ATLAS: Keep going. You have already completed many difficult hardware and software steps. The system is improving stage by stage.
+[2026-07-09 10:53:00] USER: help | INTENT: ENCOURAGEMENT_REQUEST | ATLAS: Keep going. You have already completed many difficult hardware and software steps. The system is improving stage by stage.
+[2026-07-09 10:53:18] USER: warning | INTENT: WARNING_EVENT | ATLAS: Warning detected. Please check the robot structure, cables, and power system.
+[2026-07-09 10:53:27] USER: test | INTENT: BEHAVIOR_TEST_EVENT | ATLAS: Starting behavior test.

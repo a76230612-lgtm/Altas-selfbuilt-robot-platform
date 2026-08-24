@@ -1,0 +1,16 @@
+{
+  "serial_port": "COM6",
+  "backup_serial_ports": [
+    "COM4",
+    "COM5",
+    "COM3",
+    "COM7",
+    "COM8"
+  ],
+  "baud_rate": 9600,
+  "camera_index": 0,
+  "voice_input_sample_rate": 16000,
+  "default_voice_language": "en-US",
+  "tts_rate": 160,
+  "tts_volume": 1.0
+}

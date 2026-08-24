@@ -1,0 +1,288 @@
+{
+  "student_name": "Eric",
+  "robot_name": "Atlas",
+  "file_name": "atlas_all_versions_final_data.json",
+  "file_type": "Atlas 1.0-5.0 final integrated JSON database",
+  "created_at": "2026-07-10 11:31:51",
+  "latest_version": "Atlas 5.0 Final Stable Program v1",
+  "data_sources": [
+    {
+      "source_file": "82c844bb-a0cc-4ffc-ac65-28595095e937.json",
+      "source_version": "Atlas 5.0 Stage 10B Google Voice + TTS",
+      "record_count": 9,
+      "main_function": "Stage 10B voice input + Google SpeechRecognition + pyttsx3 voice output + ESP32 hardware behavior loop"
+    },
+    {
+      "source_file": "b1d86217-eb8b-4100-9693-a07fd712ea12.json",
+      "source_version": "Atlas 5.0 Final Stable Program v1",
+      "record_count": 2,
+      "main_function": "Final stable program with camera preview + voice input + voice output + OLED + LEDs + pan-tilt behavior"
+    }
+  ],
+  "atlas_versions": [
+    {
+      "version": "Atlas 1.0",
+      "status": "completed",
+      "role": "AI research mentor robot foundation",
+      "main_functions": [
+        "basic mentor interaction",
+        "long-term memory foundation",
+        "project log foundation",
+        "early hardware / software integration foundation"
+      ],
+      "data_status": "version summary included; detailed runtime records are not present in these two uploaded JSON files"
+    },
+    {
+      "version": "Atlas 2.0",
+      "status": "completed",
+      "role": "project management robot layer",
+      "main_functions": [
+        "project database",
+        "daily task management",
+        "bug manager",
+        "weekly report"
+      ],
+      "data_status": "version summary included; detailed runtime records are not present in these two uploaded JSON files"
+    },
+    {
+      "version": "Atlas 3.0",
+      "status": "completed",
+      "role": "Eric digital twin mentor layer",
+      "main_functions": [
+        "profile database",
+        "skill database",
+        "project history",
+        "learning planner",
+        "emotion memory",
+        "mentor recommendation"
+      ],
+      "data_status": "version summary included; detailed runtime records are not present in these two uploaded JSON files"
+    },
+    {
+      "version": "Atlas 4.0",
+      "status": "completed",
+      "role": "voice input / voice output preparation layer",
+      "main_functions": [
+        "speech recording",
+        "speech recognition method validated",
+        "text-to-speech output validated",
+        "voice input and output code reused by Atlas 5.0"
+      ],
+      "data_status": "version summary included; detailed runtime records are not present in these two uploaded JSON files"
+    },
+    {
+      "version": "Atlas 5.0 Stage 10B",
+      "status": "completed",
+      "role": "voice input + voice output + ESP32 behavior loop",
+      "main_functions": [
+        "speech_recognition voice-to-text",
+        "pyttsx3 text-to-speech",
+        "ESP32 behavior control",
+        "LISTENING / THINKING / SUCCESS / ENCOURAGE / WARNING / ERROR"
+      ],
+      "data_status": "runtime records included",
+      "record_count": 9
+    },
+    {
+      "version": "Atlas 5.0 Final Stable Program v1",
+      "status": "completed",
+      "role": "final integrated voice + camera + OLED + pan-tilt robot program",
+      "main_functions": [
+        "camera preview through OpenCV",
+        "terminal menu control",
+        "real voice recording",
+        "speech recognition voice-to-text",
+        "pyttsx3 text-to-speech",
+        "ESP32 OLED / LED / pan-tilt behavior control",
+        "Safe Mode ARM -> ACTION -> DISARM"
+      ],
+      "data_status": "runtime records included",
+      "record_count": 2
+    }
+  ],
+  "combined_records_summary": {
+    "total_records": 11,
+    "record_count_by_source": {
+      "Atlas 5.0 Stage 10B": 9,
+      "Atlas 5.0 Final Stable Program v1": 2
+    },
+    "language_counts": {
+      "English": 7,
+      "中文": 4
+    },
+    "intent_counts": {
+      "PROJECT_QUESTION": 3,
+      "SELF_INTRO": 1,
+      "ENCOURAGEMENT_REQUEST": 2,
+      "NORMAL_QUESTION": 2,
+      "GREETING": 3
+    },
+    "status_counts": {
+      "recognized": 11
+    },
+    "first_record_time": "2026-07-10 10:11:31",
+    "last_record_time": "2026-07-10 18:57:24"
+  },
+  "combined_records": [
+    {
+      "time": "2026-07-10 10:11:31",
+      "language": "English",
+      "recognized_text": "hello Atlas I am Eric",
+      "intent": "PROJECT_QUESTION",
+      "reply": "Atlas is currently using the Atlas 4.0 voice input and output method inside the Atlas 5.0 behavior system.",
+      "status": "recognized",
+      "snapshot_path": "",
+      "source_version": "Atlas 5.0 Stage 10B Google Voice + TTS",
+      "source_stage": "Atlas 5.0 Stage 10B",
+      "source_file": "82c844bb-a0cc-4ffc-ac65-28595095e937.json",
+      "record_id": 1
+    },
+    {
+      "time": "2026-07-10 10:54:29",
+      "language": "English",
+      "recognized_text": "hello Atlas I am Eric",
+      "intent": "PROJECT_QUESTION",
+      "reply": "Atlas is currently using the Atlas 4.0 voice input and output method inside the Atlas 5.0 behavior system.",
+      "status": "recognized",
+      "snapshot_path": "",
+      "source_version": "Atlas 5.0 Stage 10B Google Voice + TTS",
+      "source_stage": "Atlas 5.0 Stage 10B",
+      "source_file": "82c844bb-a0cc-4ffc-ac65-28595095e937.json",
+      "record_id": 2
+    },
+    {
+      "time": "2026-07-10 10:55:10",
+      "language": "English",
+      "recognized_text": "what can you do",
+      "intent": "SELF_INTRO",
+      "reply": "I am Atlas 5.0, a desktop hardware robot prototype. I can listen to your voice, understand simple intent, speak a reply, and control my head and lights.",
+      "status": "recognized",
+      "snapshot_path": "",
+      "source_version": "Atlas 5.0 Stage 10B Google Voice + TTS",
+      "source_stage": "Atlas 5.0 Stage 10B",
+      "source_file": "82c844bb-a0cc-4ffc-ac65-28595095e937.json",
+      "record_id": 3
+    },
+    {
+      "time": "2026-07-10 10:55:49",
+      "language": "English",
+      "recognized_text": "I am tired",
+      "intent": "ENCOURAGEMENT_REQUEST",
+      "reply": "Keep going, Eric. You have already completed many difficult steps. Test one function at a time, and the robot will become more stable.",
+      "status": "recognized",
+      "snapshot_path": "",
+      "source_version": "Atlas 5.0 Stage 10B Google Voice + TTS",
+      "source_stage": "Atlas 5.0 Stage 10B",
+      "source_file": "82c844bb-a0cc-4ffc-ac65-28595095e937.json",
+      "record_id": 4
+    },
+    {
+      "time": "2026-07-10 10:57:33",
+      "language": "中文",
+      "recognized_text": "你好啊请问我是Eric",
+      "intent": "NORMAL_QUESTION",
+      "reply": "I heard your question. This is a simulated answer. In a later stage, I can connect to a real AI brain.",
+      "status": "recognized",
+      "snapshot_path": "",
+      "source_version": "Atlas 5.0 Stage 10B Google Voice + TTS",
+      "source_stage": "Atlas 5.0 Stage 10B",
+      "source_file": "82c844bb-a0cc-4ffc-ac65-28595095e937.json",
+      "record_id": 5
+    },
+    {
+      "time": "2026-07-10 17:37:38",
+      "language": "English",
+      "recognized_text": "hello Atlas I am Eric",
+      "intent": "PROJECT_QUESTION",
+      "reply": "Atlas is currently using the Atlas 4.0 voice input and output method inside the Atlas 5.0 behavior system.",
+      "status": "recognized",
+      "snapshot_path": "",
+      "source_version": "Atlas 5.0 Stage 10B Google Voice + TTS",
+      "source_stage": "Atlas 5.0 Stage 10B",
+      "source_file": "82c844bb-a0cc-4ffc-ac65-28595095e937.json",
+      "record_id": 6
+    },
+    {
+      "time": "2026-07-10 17:38:57",
+      "language": "English",
+      "recognized_text": "I am tired",
+      "intent": "ENCOURAGEMENT_REQUEST",
+      "reply": "Keep going, Eric. You have already completed many difficult steps. Test one function at a time, and the robot will become more stable.",
+      "status": "recognized",
+      "snapshot_path": "",
+      "source_version": "Atlas 5.0 Stage 10B Google Voice + TTS",
+      "source_stage": "Atlas 5.0 Stage 10B",
+      "source_file": "82c844bb-a0cc-4ffc-ac65-28595095e937.json",
+      "record_id": 7
+    },
+    {
+      "time": "2026-07-10 17:39:34",
+      "language": "中文",
+      "recognized_text": "您好你是谁",
+      "intent": "NORMAL_QUESTION",
+      "reply": "I heard your question. This is a simulated answer. In a later stage, I can connect to a real AI brain.",
+      "status": "recognized",
+      "snapshot_path": "",
+      "source_version": "Atlas 5.0 Stage 10B Google Voice + TTS",
+      "source_stage": "Atlas 5.0 Stage 10B",
+      "source_file": "82c844bb-a0cc-4ffc-ac65-28595095e937.json",
+      "record_id": 8
+    },
+    {
+      "time": "2026-07-10 17:40:04",
+      "language": "中文",
+      "recognized_text": "你好",
+      "intent": "GREETING",
+      "reply": "Hello Eric. I am Atlas. I can hear you and speak now.",
+      "status": "recognized",
+      "snapshot_path": "",
+      "source_version": "Atlas 5.0 Stage 10B Google Voice + TTS",
+      "source_stage": "Atlas 5.0 Stage 10B",
+      "source_file": "82c844bb-a0cc-4ffc-ac65-28595095e937.json",
+      "record_id": 9
+    },
+    {
+      "time": "2026-07-10 18:56:36",
+      "language": "English",
+      "recognized_text": "hello Atlas",
+      "intent": "GREETING",
+      "reply": "Hello Eric. I am Atlas. My voice, camera, OLED, lights, and head movement are running together.",
+      "status": "recognized",
+      "snapshot_path": "",
+      "source_version": "Atlas 5.0 Final Stable Program v1",
+      "source_stage": "Atlas 5.0 Final Stable Program",
+      "source_file": "b1d86217-eb8b-4100-9693-a07fd712ea12.json",
+      "record_id": 10
+    },
+    {
+      "time": "2026-07-10 18:57:24",
+      "language": "中文",
+      "recognized_text": "你好",
+      "intent": "GREETING",
+      "reply": "Hello Eric. I am Atlas. My voice, camera, OLED, lights, and head movement are running together.",
+      "status": "recognized",
+      "snapshot_path": "",
+      "source_version": "Atlas 5.0 Final Stable Program v1",
+      "source_stage": "Atlas 5.0 Final Stable Program",
+      "source_file": "b1d86217-eb8b-4100-9693-a07fd712ea12.json",
+      "record_id": 11
+    }
+  ],
+  "final_system_status": {
+    "esp32_firmware": "atlas5_body_firmware_oled_v1_success.ino",
+    "python_final_program": "atlas_1_2_3_4_5_full_main.py / atlas5_final_voice_camera_robot.py integrated workflow",
+    "hardware_modules": [
+      "ESP32",
+      "OLED display",
+      "green / yellow / red LEDs",
+      "pan servo",
+      "tilt servo",
+      "4xAA servo battery box",
+      "C950 USB camera through computer",
+      "computer microphone",
+      "computer speaker"
+    ],
+    "safety_mode": "Use ARM -> ACTION -> DISARM to reduce servo jitter",
+    "note": "USB camera is read by Python/OpenCV on the computer, not directly by ESP32."
+  }
+}

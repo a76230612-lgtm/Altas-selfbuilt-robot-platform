@@ -1,0 +1,100 @@
+{
+  "archive_schema": "Atlas evidence summary v1",
+  "version": "Atlas 5.0",
+  "name": "Hardware Robot Engineering Edition",
+  "source_status": "reconstructed_index_from_project_log_not_original_runtime_database",
+  "authoritative_source": "../../Original_Source/project_log.txt",
+  "log_line_range": {
+    "start": 4378,
+    "end": 4541
+  },
+  "goal": "把 4.0 的分散硬件反馈升级为具有二自由度头部、OLED、LED、摄像头、语音和 Safe Mode 行为状态机的桌面机器人原型。",
+  "features": [
+    "Pan/Tilt 机械结构",
+    "OLED/LED 状态反馈",
+    "Python HAL",
+    "行为状态机",
+    "ARM→ACTION→DISARM Safe Mode",
+    "中英文语音",
+    "C950 外置摄像头",
+    "最终整合程序"
+  ],
+  "tests": [
+    {
+      "id": "T5-01",
+      "name": "Stage 10B 英文语音",
+      "result": "PASS",
+      "evidence": "hello Atlas、what can you do、I am tired 均有识别、意图和回复记录。"
+    },
+    {
+      "id": "T5-02",
+      "name": "Stage 10B 中文语音",
+      "result": "PARTIAL",
+      "evidence": "“你好”识别为 GREETING；部分复合中文句被归类为 NORMAL_QUESTION。"
+    },
+    {
+      "id": "T5-03",
+      "name": "Final 英文问候",
+      "result": "PASS",
+      "evidence": "2026-07-10 18:56:36，English/GREETING/完整回复。"
+    },
+    {
+      "id": "T5-04",
+      "name": "Final 中文问候",
+      "result": "PASS",
+      "evidence": "2026-07-10 18:57:24，中文/GREETING/完整回复。"
+    },
+    {
+      "id": "T5-05",
+      "name": "摄像头截图",
+      "result": "PASS",
+      "evidence": "18:57:50 保存 atlas5_final_snapshot_20260710_185747.jpg。"
+    },
+    {
+      "id": "T5-06",
+      "name": "Safe Mode / ESP32命令逐条回包",
+      "result": "PARTIAL",
+      "evidence": "最终程序能完成对话并退出，但 project_log 未单列每条 ESP32 READY 回包。"
+    },
+    {
+      "id": "T5-07",
+      "name": "TEST50机械稳定性",
+      "result": "NOT VERIFIED",
+      "evidence": "测试固件包含 TEST50；附件日志未提供50次最终统计。"
+    }
+  ],
+  "bugs": [
+    {
+      "id": "A5-B01",
+      "date_or_stage": "机械调试记录",
+      "symptom": "OLED 作为头部负载使垂直舵机压力增加，中位角不一定等于物理正面。",
+      "cause": "安装方向、重心和舵盘机械中位共同影响姿态。",
+      "solution": "使用保守角度；先测试 CENTER；根据实际装配校准 Tilt 中位。",
+      "verification": "原记录提醒观察下坠、嗡鸣和过热；没有提供统一实测角度。",
+      "status": "需按实物持续校准"
+    },
+    {
+      "id": "A5-B02",
+      "date_or_stage": "2026-07-10",
+      "symptom": "中文“您好你是谁”被分类为 NORMAL_QUESTION。",
+      "cause": "规则关键词没有覆盖该组合表达。",
+      "solution": "后续“你好”能识别为 GREETING；完整中文意图词表仍需扩展。",
+      "verification": "17:39:34 与17:40:04两条记录可对比。",
+      "status": "部分解决"
+    },
+    {
+      "id": "A5-B03",
+      "date_or_stage": "归档检查",
+      "symptom": "最终 ESP32 OLED Body Firmware 被 Python 和日志引用，但原始 .ino 未附带。",
+      "cause": "早期源码未按版本完整归档。",
+      "solution": "保留真实 Python、Stage2 Arduino 测试固件和缺口说明；禁止用猜测引脚伪造最终固件。",
+      "verification": "6.0硬件基线只确认 Pan=GPIO18、Tilt=GPIO19，LED/OLED仍待确认。",
+      "status": "未解决的资料缺口"
+    }
+  ],
+  "unknown_or_missing": [
+    "原始运行JSON未随本次project_log附件提供",
+    "媒体证据按用户要求不纳入",
+    "所有NOT VERIFIED项不得推定通过"
+  ]
+}

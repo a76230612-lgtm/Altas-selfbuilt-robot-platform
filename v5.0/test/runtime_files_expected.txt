@@ -1,0 +1,8 @@
+# Atlas 5.0 Runtime Data Files
+
+这些名称来自保留源码。文件不存在时，程序可能在首次运行后生成；运行前请先备份同名旧文件。
+
+- atlas5_final_voice_camera_data.json
+- atlas5_final_voice_camera_log.txt
+- atlas5_final_camera_snapshots/
+- project_log.txt
