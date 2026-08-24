@@ -1,0 +1,125 @@
+Atlas 5.0 最终硬件记录
+
+一、基本信息
+
+项目名称：Atlas 5.0
+项目状态：已经完成
+封版日期：待填写
+主要操作者：Eric
+电脑系统：Windows
+Python运行方式：Cursor
+Arduino代码位置：已复制到esp32_firmware文件夹
+
+
+二、主控制器
+
+开发板准确型号：待确认
+Arduino IDE中选择的开发板名称：待确认
+Arduino IDE中使用的COM端口：待确认
+USB接口类型：待确认
+串口波特率：待确认
+
+
+三、Atlas 5.0已经确认的GPIO
+
+Pan水平舵机：GPIO 18
+Tilt垂直舵机：GPIO 19
+
+绿色LED：GPIO25
+黄色LED：GPIO26
+红色LED：GPIO27
+
+OLED SDA：GPIO21
+OLED SCL：GPIO22
+
+其他GPIO：待确认
+
+
+四、舵机信息
+
+Pan舵机型号：待确认
+Tilt舵机型号：待确认
+
+Pan机械中位角：待确认
+Tilt机械中位角：待确认
+
+Pan安全最小角度：待确认
+Pan安全最大角度：待确认
+Tilt安全最小角度：待确认
+Tilt安全最大角度：待确认
+
+舵机供电方式：USB供电, 五节电池盒
+舵机是否与ESP32共地：是
+
+
+五、OLED信息
+
+OLED准确型号：待确认
+OLED尺寸：待确认
+OLED分辨率：待确认
+OLED接口类型：待确认
+OLED I2C地址：x3c
+
+
+六、串口通信
+
+串口波特率：115200
+Python发送命令格式：待确认
+ESP32返回数据格式：待确认
+启动命令：待确认
+停止或解除命令：待确认
+Safe Mode命令：待确认
+
+
+七、Atlas 5.0已经实现的功能
+
+1. Python主程序：已完成
+2. JSON数据：已整合
+3. TXT记录：已整合
+4. Arduino硬件控制：已完成
+5. 二自由度舵机云台：已完成
+6. OLED显示：已完成
+7. LED状态提示：已完成
+8. Atlas行为状态机：已完成
+9. Safe Mode：完成
+10. 语音功能：完成
+11. 摄像头功能：完成
+
+
+八、Atlas 5.0行为状态
+
+IDLE
+LISTENING
+THINKING
+SUCCESS
+ENCOURAGE
+WARNING
+ERROR
+
+是否还有其他状态：没有
+
+九、已知注意事项
+
+1. Pan舵机使用GPIO 18，不得擅自修改。
+2. Tilt舵机使用GPIO 19，不得擅自修改。
+3. 舵机代码中的90度不一定等于实际机械正面。
+4. Tilt舵机曾出现执行ARM后OLED朝下的问题。
+5. 修改角度前必须确认实际安装方向和机械中位角。
+6. Atlas 6.0开发不得覆盖Atlas 5.0稳定版本。
+7. Atlas 6.0暂时不得添加OpenAI API或API Key。
+
+
+十、封版确认
+
+Python程序是否可以启动：待测试
+JSON是否可以正常读取：待测试
+TXT是否可以正常读取：待测试
+Python能否连接ESP32：待测试
+Pan舵机是否正常：待测试
+Tilt舵机是否正常：待测试
+OLED是否正常：待测试
+LED是否正常：待测试
+Safe Mode是否正常：待测试
+Atlas 5.0完整演示是否成功：待测试
+
+最终结论：等待真实测试后填写
