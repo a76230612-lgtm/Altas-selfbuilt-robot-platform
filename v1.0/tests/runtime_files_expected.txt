@@ -1,0 +1,9 @@
+# Atlas 1.0 Runtime Data Files
+
+这些名称来自保留源码。文件不存在时，程序可能在首次运行后生成；运行前请先备份同名旧文件。
+
+- atlas_final_data.json（累计程序生成）
+- memory.json（旧版迁移源，若存在）
+- project_log.txt
+- camera_log.txt
+- weekly_report.txt

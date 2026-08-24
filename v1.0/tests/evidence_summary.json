@@ -1,0 +1,84 @@
+{
+  "archive_schema": "Atlas evidence summary v1",
+  "version": "Atlas 1.0",
+  "name": "AI Research Mentor Robot",
+  "source_status": "reconstructed_index_from_project_log_not_original_runtime_database",
+  "authoritative_source": "../../Original_Source/project_log.txt",
+  "log_line_range": {
+    "start": 1,
+    "end": 115
+  },
+  "goal": "建立能够记录研发过程、读取历史记录并给出基础导师建议的 Atlas 原型，同时保留摄像头与硬件反馈接口。",
+  "features": [
+    "结构化 Project Log，并同步保存到 JSON 与 TXT",
+    "根据最近项目记录回答“下一步该做什么”",
+    "研发受挫时给出边界清楚的项目调试支持",
+    "累计源码中保留 Arduino/OLED/舵机反馈与摄像头人脸存在检测"
+  ],
+  "tests": [
+    {
+      "id": "T1-01",
+      "name": "Project Log 写入",
+      "result": "PASS",
+      "evidence": "2026-07-01 记录包含固定字段，并被后续导师建议读取。"
+    },
+    {
+      "id": "T1-02",
+      "name": "历史导师建议",
+      "result": "PASS",
+      "evidence": "2026-07-01 17:20:17 的建议引用最近完成、问题和下一步。"
+    },
+    {
+      "id": "T1-03",
+      "name": "研发支持",
+      "result": "PASS",
+      "evidence": "两条 Research Support 记录均给出边界与四步最小排错动作。"
+    },
+    {
+      "id": "T1-04",
+      "name": "Arduino/OLED/舵机反馈",
+      "result": "NOT VERIFIED",
+      "evidence": "后续项目历史称已完成，但1.0段没有独立串口回包记录。"
+    },
+    {
+      "id": "T1-05",
+      "name": "摄像头存在检测",
+      "result": "PARTIAL",
+      "evidence": "后续 Bug 记录证明人脸检测修复；1.0段没有独立逐帧测试表。"
+    }
+  ],
+  "bugs": [
+    {
+      "id": "A1-B01",
+      "date_or_stage": "2026-07-01",
+      "symptom": "一开始不知道日志应该保存在哪里。",
+      "cause": "没有先规定数据文件和日志文件的固定位置。",
+      "solution": "同时保存到 memory.json 和 project_log.txt。",
+      "verification": "Project Log 与后续导师建议均能读取这条记录。",
+      "status": "已解决"
+    },
+    {
+      "id": "A1-B02",
+      "date_or_stage": "历史汇总记录",
+      "symptom": "摄像头离开画面后可能仍显示有人。",
+      "cause": "人体/存在检测方式对背景与残留目标较敏感。",
+      "solution": "后续改成人脸检测，并继续观察距离与光线。",
+      "verification": "2026-07-02 的 Bug Manager 记录写明离开画面后可显示 NO PERSON。",
+      "status": "已解决；证据在2.0日志中"
+    },
+    {
+      "id": "A1-B03",
+      "date_or_stage": "归档检查",
+      "symptom": "1.0 独立原始主程序与 Arduino 固件未随本次附件提供。",
+      "cause": "早期文件没有按版本独立归档。",
+      "solution": "保留累计主程序并建立源码缺口说明；不伪造原始固件。",
+      "verification": "本归档可追溯到累计源码和 project_log.txt。",
+      "status": "文档性缺口"
+    }
+  ],
+  "unknown_or_missing": [
+    "原始运行JSON未随本次project_log附件提供",
+    "媒体证据按用户要求不纳入",
+    "所有NOT VERIFIED项不得推定通过"
+  ]
+}
