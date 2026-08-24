@@ -1,0 +1,85 @@
+{
+  "archive_schema": "Atlas evidence summary v1",
+  "version": "Atlas 2.0",
+  "name": "Project Management Robot",
+  "source_status": "reconstructed_index_from_project_log_not_original_runtime_database",
+  "authoritative_source": "../../Original_Source/project_log.txt",
+  "log_line_range": {
+    "start": 116,
+    "end": 898
+  },
+  "goal": "把 Atlas 从有记忆的导师原型升级为可以管理项目、每日任务、Bug 和周报的研发管理机器人。",
+  "features": [
+    "Project Database",
+    "Daily Task 创建/查看/复盘",
+    "Bug Manager 新增/搜索/更新/统计",
+    "Weekly Report 自动生成",
+    "atlas2_data.json 统一数据库"
+  ],
+  "tests": [
+    {
+      "id": "T2-01",
+      "name": "Project Database",
+      "result": "PASS",
+      "evidence": "日志显示项目总览、查看全部项目和更新操作。"
+    },
+    {
+      "id": "T2-02",
+      "name": "Daily Task",
+      "result": "PASS",
+      "evidence": "创建、查看、晚上复盘与查看全部任务均有时间戳记录。"
+    },
+    {
+      "id": "T2-03",
+      "name": "Bug Manager",
+      "result": "PASS",
+      "evidence": "新增、搜索、更新状态与统计完成；1个 Bug 最终已解决。"
+    },
+    {
+      "id": "T2-04",
+      "name": "Weekly Report",
+      "result": "PASS",
+      "evidence": "2026-07-02 自动生成并查看周报。"
+    },
+    {
+      "id": "T2-05",
+      "name": "合并版",
+      "result": "PASS",
+      "evidence": "日志显示 Atlas 2.0 状态完成、完成度100%，四模块进入同一入口。"
+    }
+  ],
+  "bugs": [
+    {
+      "id": "A2-B01",
+      "date_or_stage": "2026-07-02 19:34",
+      "symptom": "更新项目时输入内容串入状态与下一步字段。",
+      "cause": "交互输入顺序混乱，用户输入了提示语或编号。",
+      "solution": "记录无效输入；后续在合并版重新更新并完成归档。",
+      "verification": "最终 Demo 总览显示 Atlas 2.0 状态完成、完成度100%。",
+      "status": "已解决"
+    },
+    {
+      "id": "A2-B02",
+      "date_or_stage": "2026-07-02 19:48",
+      "symptom": "OpenCV 人脸检测不稳定，离开画面后仍显示有人。",
+      "cause": "原先的人体/存在检测不适合当前画面。",
+      "solution": "改成人脸检测，并继续测试距离与光线。",
+      "verification": "19:49:49 更新为已解决；离开画面可显示 NO PERSON。",
+      "status": "已解决"
+    },
+    {
+      "id": "A2-B03",
+      "date_or_stage": "整合阶段",
+      "symptom": "Project Database、Daily Task、Bug Manager、Weekly Report 分散在多个文件。",
+      "cause": "按功能逐阶段开发，缺少统一入口和统一数据文件。",
+      "solution": "建立 atlas2_main.py 与 atlas2_data.json，并迁移旧 JSON。",
+      "verification": "合并版一键总览和四模块记录均存在。",
+      "status": "已解决"
+    }
+  ],
+  "unknown_or_missing": [
+    "原始运行JSON未随本次project_log附件提供",
+    "媒体证据按用户要求不纳入",
+    "所有NOT VERIFIED项不得推定通过"
+  ]
+}

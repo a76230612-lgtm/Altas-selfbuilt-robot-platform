@@ -1,0 +1,101 @@
+{
+  "student_name": "Eric",
+  "atlas_version": "Atlas 2.0",
+  "database_version": "Atlas 2.0 Unified Database v1",
+  "projects": [
+    {
+      "id": 1,
+      "name": "智能植物养护系统",
+      "status": "完成",
+      "progress": 100,
+      "category": "AI + Hardware + Plant Care",
+      "description": "可以记录为 Eric 已完成的科创项目，用于展示持续研发能力。",
+      "next_step": "整理项目日志、Demo 视频和版本说明。"
+    },
+    {
+      "id": 2,
+      "name": "AI Research Mentor Robot / Atlas 1.0",
+      "status": "完成",
+      "progress": 100,
+      "category": "AI Mentor Robot",
+      "description": "已经完成长期记忆、Project Log、导师建议、情绪支持、Arduino、OLED 和摄像头检测。",
+      "next_step": "整理最终 Demo 视频和项目说明。"
+    },
+    {
+      "id": 3,
+      "name": "Atlas 2.0",
+      "status": "完成",
+      "progress": 100,
+      "category": "Project Management Robot",
+      "description": "目标是让机器人学会管理项目、每日任务、Bug 和周报。",
+      "next_step": "拍摄Demo视频"
+    }
+  ],
+  "daily_tasks": [
+    {
+      "date": "2026-07-02",
+      "created_time": "20:39:02",
+      "project_name": "Atlas 2.0",
+      "today_plan": "Demo视频的拍摄",
+      "estimated_hours": 1,
+      "priority": "高",
+      "reason": "是atlas 2.0的一个核心步骤",
+      "status": "部分完成",
+      "evening_review_done": true,
+      "finished_result": "拍摄了代码过程的一半",
+      "problem": "无",
+      "next_step": "做atlas 3.0",
+      "mentor_comment": "今天已经有部分推进。明天建议优先继续做：做atlas 3.0。"
+    }
+  ],
+  "bugs": [
+    {
+      "id": 1,
+      "date": "2026-07-02",
+      "created_time": "19:48:29",
+      "project_name": "Atlas 2.0",
+      "bug_title": "OpenCV 人脸检测不稳定",
+      "bug_description": "Eric 离开画面后，程序有时仍然显示有人",
+      "trigger_condition": "什么时候会出现这个 Bug？摄像头检测人在不在时",
+      "attempted_solution": "已经尝试过什么解决方法？从人体检测改成人脸检测",
+      "severity": "中",
+      "status": "已解决",
+      "solution": "改成人脸检测后，Eric 离开画面可以正确显示 NO PERSON",
+      "fixed_time": "2026-07-02 19:49:49",
+      "next_step": "下一步：继续观察摄像头检测稳定性",
+      "mentor_comment": "这是视觉识别类 Bug。建议先确认摄像头能否打开，再确认光线、距离、检测模型和阈值。"
+    },
+    {
+      "id": 2,
+      "date": "2026-07-02",
+      "created_time": "20:42:29",
+      "project_name": "Atlas 2.0",
+      "bug_title": "project_log记录不了聊天记录",
+      "bug_description": "在终端里输入记录project json没收到",
+      "trigger_condition": "在测试代码的时候",
+      "attempted_solution": "换了一个更加稳定的代码吗",
+      "severity": "中",
+      "status": "未解决",
+      "solution": "",
+      "fixed_time": "",
+      "next_step": "不许排查",
+      "mentor_comment": "建议下一步先做最小复现，并执行：不许排查。"
+    }
+  ],
+  "weekly_reports": [
+    {
+      "week_start": "2026-06-29",
+      "week_end": "2026-07-05",
+      "created_date": "2026-07-02",
+      "created_time": "19:56:49",
+      "content": "Atlas 2.0 Weekly Report\n周报周期：2026-06-29 至 2026-07-05\n\n一、本周项目总览\nEric 当前一共有 3 个项目。\n已完成项目：2 个。\n开发中项目：0 个。\n其他状态项目：1 个。\nAtlas 2.0 当前状态：请输入要更新的项目 ID：3。\nAtlas 2.0 当前完成度：20%。\nAtlas 2.0 当前下一步：新的完成度数字：25。\n\n项目列表：\n- 智能植物养护系统 | 状态：完成 | 完成度：100%\n- AI Research Mentor Robot / Atlas 1.0 | 状态：完成 | 完成度：100%\n- Atlas 2.0 | 状态：请输入要更新的项目 ID：3 | 完成度：20%\n\n二、本周 Daily Task 总结\n本周任务总数：1 个。\n完成任务：1 个。\n部分完成任务：0 个。\n未完成任务：0 个。\n\n任务列表：\n- 2026-07-02 | A托拉斯2.0 | 完成 Daily Task 每日任务功能 | 状态：完成\n\n三、本周 Bug 总结\n本周 Bug 总数：1 个。\n未解决 Bug：0 个。\n排查中 Bug：0 个。\n已解决 Bug：1 个。\n高严重程度 Bug：0 个。\n\nBug 列表：\n- Bug ID 1 | OpenCV 人脸检测不稳定 | 状态：已解决 | 严重程度：中\n\n四、机器人导师判断\n本周已经有可记录的研发产出。\n本周有 Bug 修复记录，这是很重要的真实研发证据。\n\n五、下周建议\n1. 继续推进 Atlas 2.0，完成 Weekly Report 后可以更新 Atlas 2.0 进度。\n\n六、本周最低完成判断\n如果本周已经完成 Project Database、Daily Task、Bug Manager，并生成本周报告，Atlas 2.0 的核心管理能力已经跑通。"
+    },
+    {
+      "week_start": "2026-06-29",
+      "week_end": "2026-07-05",
+      "created_date": "2026-07-02",
+      "created_time": "20:43:04",
+      "content": "Atlas 2.0 Weekly Report\n周报周期：2026-06-29 至 2026-07-05\n\n一、本周项目总览\nEric 现在一共有 3 个项目。\n已完成项目：3 个。\n开发中项目：0 个。\n其他状态项目：0 个。\nAtlas 2.0 当前状态：完成。\nAtlas 2.0 当前完成度：100%。\nAtlas 2.0 当前下一步：拍摄Demo视频。\n\n项目列表：\n- 智能植物养护系统 | 状态：完成 | 完成度：100%\n- AI Research Mentor Robot / Atlas 1.0 | 状态：完成 | 完成度：100%\n- Atlas 2.0 | 状态：完成 | 完成度：100%\n\n二、本周 Daily Task 总结\n本周任务总数：1 个。\n完成任务：0 个。\n部分完成任务：1 个。\n未完成任务：0 个。\n任务列表：\n- 2026-07-02 | Atlas 2.0 | Demo视频的拍摄 | 状态：部分完成\n\n三、本周 Bug 总结\n本周 Bug 总数：2 个。\n未解决 Bug：1 个。\n排查中 Bug：0 个。\n已解决 Bug：1 个。\n高严重程度 Bug：0 个。\nBug 列表：\n- Bug ID 1 | OpenCV 人脸检测不稳定 | 状态：已解决 | 严重程度：中\n- Bug ID 2 | project_log记录不了聊天记录 | 状态：未解决 | 严重程度：中\n\n四、机器人导师判断\n本周任务记录偏少，后续需要继续保持每日计划和晚上复盘。\n本周有 Bug 修复记录，这是非常重要的真实研发证据。\n\n五、下周建议\n1. 下周优先处理未解决或排查中的 Bug。\n\n六、版本判断\n如果 Project Database、Daily Task、Bug Manager 和 Weekly Report 都能运行，Atlas 2.0 的核心管理能力已经完成。"
+    }
+  ]
+}
