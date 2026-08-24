@@ -1,0 +1,17 @@
+# Atlas 4.0 Runtime Data Files
+
+这些名称来自保留源码。文件不存在时，程序可能在首次运行后生成；运行前请先备份同名旧文件。
+
+- atlas4_config.json
+- atlas4_full_data.json
+- vision_log.txt
+- voice_input_log.txt
+- voice_output_log.txt
+- memory_integration_log.txt
+- proactive_mentor_log.txt
+- hardware_feedback_log.txt
+- voice_input_data.json
+- voice_output_data.json
+- memory_integration_data.json
+- proactive_mentor_data.json
+- project_log.txt

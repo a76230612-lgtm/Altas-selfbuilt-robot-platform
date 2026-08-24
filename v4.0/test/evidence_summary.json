@@ -1,0 +1,104 @@
+{
+  "archive_schema": "Atlas evidence summary v1",
+  "version": "Atlas 4.0",
+  "name": "Multimodal Proactive Mentor",
+  "source_status": "reconstructed_index_from_project_log_not_original_runtime_database",
+  "authoritative_source": "../../Original_Source/project_log.txt",
+  "log_line_range": {
+    "start": 1895,
+    "end": 4377
+  },
+  "goal": "在 3.0 长期记忆之上整合视觉、语音输入、语音输出、主动导师与 Arduino 硬件反馈，形成完整多模态链路。",
+  "features": [
+    "Vision",
+    "Voice Input",
+    "Voice Output",
+    "Memory Integration",
+    "Proactive Mentor",
+    "Hardware Feedback"
+  ],
+  "tests": [
+    {
+      "id": "T4-01",
+      "name": "依赖检查",
+      "result": "PASS",
+      "evidence": "2026-07-04 状态总览：OpenCV、Voice Input、pyttsx3、pyserial 均 OK。"
+    },
+    {
+      "id": "T4-02",
+      "name": "Vision",
+      "result": "PASS",
+      "evidence": "日志包含 Atlas 4.0 Vision 启动与阶段记录。"
+    },
+    {
+      "id": "T4-03",
+      "name": "Voice Input",
+      "result": "PASS",
+      "evidence": "日志包含录音/识别阶段运行记录。"
+    },
+    {
+      "id": "T4-04",
+      "name": "Voice Output",
+      "result": "PASS",
+      "evidence": "Morning Brief 标记 spoken，语音文本被记录。"
+    },
+    {
+      "id": "T4-05",
+      "name": "Memory + Proactive Mentor",
+      "result": "PASS",
+      "evidence": "Morning Brief 引用 atlas_unified_data.json、昨天计划和情绪记录。"
+    },
+    {
+      "id": "T4-06",
+      "name": "Arduino 握手",
+      "result": "PASS",
+      "evidence": "COM4，9600；PING 返回 PONG/OK:PING。"
+    },
+    {
+      "id": "T4-07",
+      "name": "硬件协议",
+      "result": "PASS",
+      "evidence": "STATUS/HAPPY/THINKING/WARNING/ERROR/NOD/OFF 均返回预期 OK。"
+    },
+    {
+      "id": "T4-08",
+      "name": "长时间稳定性",
+      "result": "NOT VERIFIED",
+      "evidence": "project_log.txt 未提供连续运行时长和循环次数。"
+    }
+  ],
+  "bugs": [
+    {
+      "id": "A4-B01",
+      "date_or_stage": "2026-07-04",
+      "symptom": "COM4/COM6 出现 FileNotFoundError，系统找不到端口。",
+      "cause": "配置端口与设备管理器当前端口不一致，或设备未连接。",
+      "solution": "扫描串口并将配置改为实际 COM4。",
+      "verification": "日志检测到 USB-SERIAL CH340 (COM4)。",
+      "status": "已解决"
+    },
+    {
+      "id": "A4-B02",
+      "date_or_stage": "2026-07-04",
+      "symptom": "COM4/COM6 出现 PermissionError(13) 拒绝访问。",
+      "cause": "Arduino 串口监视器、另一个 Python/Cursor 终端占用端口。",
+      "solution": "关闭占用程序，拔插设备后重新连接。",
+      "verification": "18:30:28 COM4 连接成功并完成 PING/PONG。",
+      "status": "已解决"
+    },
+    {
+      "id": "A4-B03",
+      "date_or_stage": "整合阶段",
+      "symptom": "单模块可运行但完整链路需要统一配置和数据来源。",
+      "cause": "六阶段独立开发。",
+      "solution": "建立 atlas4_full_main.py、atlas4_config.json 和 atlas4_full_data.json。",
+      "verification": "状态总览显示四类依赖 OK，记忆来源为 atlas_unified_data.json。",
+      "status": "已解决"
+    }
+  ],
+  "unknown_or_missing": [
+    "原始运行JSON未随本次project_log附件提供",
+    "媒体证据按用户要求不纳入",
+    "所有NOT VERIFIED项不得推定通过"
+  ]
+}
