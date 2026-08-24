@@ -1,0 +1,8 @@
+# Atlas 3.0 Runtime Data Files
+
+这些名称来自保留源码。文件不存在时，程序可能在首次运行后生成；运行前请先备份同名旧文件。
+
+- atlas3_data.json
+- project_log.txt
+- 阶段日志 TXT
+- 旧迁移源：profile.json / skills.json / history.json / learning_plan.json / emotion_memory.json / mentor_recommendation.json

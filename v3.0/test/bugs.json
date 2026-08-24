@@ -1,0 +1,22 @@
+{
+  "student_name": "Eric",
+  "bug_database_version": "Atlas 2.0 Bug Manager v1",
+  "bugs": [
+    {
+      "id": 1,
+      "date": "2026-07-02",
+      "created_time": "19:48:29",
+      "project_name": "Atlas 2.0",
+      "bug_title": "OpenCV 人脸检测不稳定",
+      "bug_description": "Eric 离开画面后，程序有时仍然显示有人",
+      "trigger_condition": "什么时候会出现这个 Bug？摄像头检测人在不在时",
+      "attempted_solution": "已经尝试过什么解决方法？从人体检测改成人脸检测",
+      "severity": "中",
+      "status": "已解决",
+      "solution": "改成人脸检测后，Eric 离开画面可以正确显示 NO PERSON",
+      "fixed_time": "2026-07-02 19:49:49",
+      "next_step": "下一步：继续观察摄像头检测稳定性",
+      "mentor_comment": "这是视觉识别类 Bug。建议先确认摄像头能否打开，再确认光线、距离、检测模型和阈值。"
+    }
+  ]
+}

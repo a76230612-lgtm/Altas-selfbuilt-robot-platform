@@ -1,0 +1,98 @@
+{
+  "archive_schema": "Atlas evidence summary v1",
+  "version": "Atlas 3.0",
+  "name": "Eric Digital Twin Mentor Robot",
+  "source_status": "reconstructed_index_from_project_log_not_original_runtime_database",
+  "authoritative_source": "../../Original_Source/project_log.txt",
+  "log_line_range": {
+    "start": 899,
+    "end": 1894
+  },
+  "goal": "建立 Eric 的成长画像、技能数据库和项目历史，使 Atlas 能产生个性化学习计划、情绪记忆与导师推荐。",
+  "features": [
+    "Eric Profile",
+    "Skill Database",
+    "Project History",
+    "Learning Planner",
+    "Emotion Memory",
+    "Mentor Recommendation"
+  ],
+  "tests": [
+    {
+      "id": "T3-01",
+      "name": "Eric Profile",
+      "result": "PASS",
+      "evidence": "日志显示成长画像、身份回答和导师建议。"
+    },
+    {
+      "id": "T3-02",
+      "name": "Skill Database",
+      "result": "PASS",
+      "evidence": "显示5项技能并根据 ROS2=0 给出学习建议。"
+    },
+    {
+      "id": "T3-03",
+      "name": "Project History",
+      "result": "PASS",
+      "evidence": "显示版本路线、迁移建议与项目搜索。"
+    },
+    {
+      "id": "T3-04",
+      "name": "Learning Planner",
+      "result": "PASS",
+      "evidence": "生成并查看 ROS2 今日学习计划。"
+    },
+    {
+      "id": "T3-05",
+      "name": "Emotion Memory",
+      "result": "PASS",
+      "evidence": "新增研发情绪记录并生成机器人提醒。"
+    },
+    {
+      "id": "T3-06",
+      "name": "Mentor Recommendation",
+      "result": "PASS",
+      "evidence": "生成综合导师推荐并写入日志。"
+    },
+    {
+      "id": "T3-07",
+      "name": "六模块主程序",
+      "result": "PASS",
+      "evidence": "Atlas 3.0 主程序启动记录存在，六模块进入统一入口。"
+    }
+  ],
+  "bugs": [
+    {
+      "id": "A3-B01",
+      "date_or_stage": "初始化阶段",
+      "symptom": "1.0、2.0 与 3.0 数据分散在多份 JSON。",
+      "cause": "每个阶段独立开发并使用不同文件名。",
+      "solution": "创建 atlas_full_data.json/atlas3_data.json，并在主程序中迁移旧数据。",
+      "verification": "主程序能显示 Profile、Skills、History、Plan、Emotion 和 Recommendation。",
+      "status": "已解决"
+    },
+    {
+      "id": "A3-B02",
+      "date_or_stage": "整合阶段",
+      "symptom": "六个阶段分别可运行，但不利于最终演示与长期维护。",
+      "cause": "缺少统一菜单和统一数据结构。",
+      "solution": "建立 atlas3_main.py 并合并六阶段。",
+      "verification": "日志记录 Atlas 3.0 主程序启动和各模块调用。",
+      "status": "已解决"
+    },
+    {
+      "id": "A3-B03",
+      "date_or_stage": "数据质量",
+      "symptom": "早期输入可能含重复前缀或口语化字段。",
+      "cause": "直接保存终端输入，没有统一清洗规则。",
+      "solution": "后续版本保留原始记录，同时在新代码中使用固定字段。",
+      "verification": "原始日志仍保留，未被覆盖。",
+      "status": "部分改善"
+    }
+  ],
+  "unknown_or_missing": [
+    "原始运行JSON未随本次project_log附件提供",
+    "媒体证据按用户要求不纳入",
+    "所有NOT VERIFIED项不得推定通过"
+  ]
+}
