@@ -1,0 +1,1 @@
+﻿ESP32正面: 已拍摄ESP32背面: 已拍摄ESP32 USB接口和芯片: 已拍摄Arduino IDE中选择的开发板名称: ESP32 Dev ModuleTB6612正面: 已拍摄TB6612背面: 已拍摄TB6612全部丝印；Hiwonder编码器电机标签: 已拍摄PH2.0-6PIN接头: TBD黄色TT电机标签: 已拍摄US-100正面、背面: TBD电源和开关的标签: 已拍摄

@@ -1,0 +1,7 @@
+timestamp,requested_command,input_distance_cm,safety_state,final_command,final_pwm,reason
+2026-08-10T18:38:36,FORWARD,60.0,CLEAR,FORWARD,80,Obstacle is farther than 50 cm.
+2026-08-10T18:38:51,FORWARD,50.0,CAUTION,FORWARD,40,Obstacle is between 25 cm and 50 cm.
+2026-08-10T18:39:06,FORWARD,25.0,CAUTION,FORWARD,40,Obstacle is between 25 cm and 50 cm.
+2026-08-10T18:39:25,FORWARD,24.9,FORCE_STOP,STOP,0,Obstacle is closer than 25 cm.
+2026-08-10T18:39:50,FORWARD,INVALID,SENSOR_INVALID,STOP,0,"Distance data is missing, non-finite, or out of range."
+2026-08-10T18:40:00,STOP,100.0,USER_STOP,STOP,0,User requested STOP.
